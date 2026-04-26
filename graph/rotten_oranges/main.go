@@ -10,6 +10,7 @@ func rottenOranges(grid [][]int) int {
 	for r := 0; r < rows; r++ {
 		for c := 0; c < cols; c++ {
 			if grid[r][c] == 2 {
+				//multi source BFS
 				queue = append(queue, []int{r, c})
 			} else if grid[r][c] == 1 {
 				fresh++
